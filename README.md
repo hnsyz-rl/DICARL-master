@@ -3,7 +3,7 @@
 This repository is the official implementation of "Robust Adversarial Reinforcement Learning with Dissipation Inequation Constraint". 
 
 
-<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure1.jpg"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure1.jpg" width=600 alt="figure"></div>
 <div align=center>Figure 1. Overview of the proposed dissipation-inequation-constraint-based adversarial reinforcement learning (DICARL) method.</div>
 
 
