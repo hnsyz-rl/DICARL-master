@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11  -shared -Wl,-soname,libcontrol_msgs.so -o libcontrol_msgs.so CMakeFiles/control_msgs.dir/MotorCommand.pb.cc.o  -L/usr/local/lib  -L/usr/local/lib/gazebo-10/plugins 

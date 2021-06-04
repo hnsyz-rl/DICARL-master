@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+b34e8f29e053b2b09116bc59954b9f0d EscSensor.pb.cc
+9bec3d941ef72393db79a3bf657f9bc6 Float.pb.cc
+2ef06c6358f3568d31c89735fa5d26be Imu.pb.cc
+a65bcc42a49df5cec35119bb378f60f2 MotorCommand.pb.cc
+66719c861e45b35dbeb37129cf89ce27 MotorSpeed.pb.cc
+7eb030e69f40b21415bfc206fa4c066e quaternion.pb.cc
+ade28e1913c42b0d5332d302422be3bb vector3d.pb.cc

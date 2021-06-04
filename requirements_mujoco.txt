@@ -1,0 +1,34 @@
+-e git+https://github.com/openai/baselines.git@c57528573ea695b19cd03e98dae48f0082fb2b5e#egg=baselines
+-e git+https://github.com/lerrel/gym-adv.git@a15d2a1be785b82d9ce4abdb98a568e37127cdf1#egg=gym
+matplotlib==3.3.3
+mpi4py==3.0.3
+mujoco-py==0.5.7
+numpy==1.19.1
+numpydoc==1.1.0
+packaging==20.4
+pandas==1.1.2
+parso==0.7.1
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==8.0.1
+pluggy==0.13.1
+progressbar2==3.53.1
+prompt-toolkit==3.0.7
+protobuf==3.14.0
+psutil==5.7.3
+ptyprocess==0.6.0
+tensorboard==1.13.1
+tensorflow==1.13.1
+tensorflow-estimator==1.13.0
+tensorflow-probability==0.6.0
+termcolor==1.1.0
+toml==0.10.1
+tqdm==4.51.0
+traitlets==4.3.3
+urllib3==1.26.2
+wcwidth==0.2.5
+Werkzeug==1.0.1
+wrapt==1.12.1
+xacro==1.13.3
+zipp==3.4.0
+zmq==0.0.0
