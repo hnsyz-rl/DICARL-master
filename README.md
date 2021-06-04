@@ -3,7 +3,7 @@
 This repository is the official implementation of "Robust Adversarial Reinforcement Learning with Dissipation Inequation Constraint". 
 
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/cartpole/training-return-1.jpg" width=400 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure1.jpg" width=600 alt="figure"></div>
 <div align=center>Figure 1. Overview of the proposed dissipation-inequation-constraint-based adversarial reinforcement learning (DICARL) method.</div>
 
 
@@ -22,7 +22,7 @@ conda activate dicarl
 ## Requirements
 
 To install requirements:
-For the MuJoCo environment (Experiment 4.1 and 4.2):
+For the MuJoCo environments (Experiment 4.1 and 4.2):
 ```setup
 pip install -r requirements_mujoco.txt
 ```
@@ -36,7 +36,7 @@ For the GymFc environment (Experiment 4.3):
 ```setup
 pip install -r requirements_gymfc.txt
 ```
-For more information on GymFc environments, refer to the [GymFc webpage](https://github.com/wil3/gymfc).
+For more information on GymFc environment, refer to the [GymFc webpage](https://github.com/wil3/gymfc).
 
 Since this environment uses the Gazebo 10, you'll need to install Gazebo following [this](http://gazebosim.org/).
 
@@ -55,11 +55,11 @@ Where the parameter is_train needs to be set to:
 is_train = True
 ```
 
-The hyperparameters and the learning algorithm can be changed via changing the run_Test.py, for example:
+The hyperparameters and the learning algorithm can be changed via changing the `run_Test.py`, for example:
 
 The algorithm name could be one of ['DICARL', 'Domain_rand', 'NR_MDP', 'PPO', 'RARL'], and you can modify the training_name variable to change the different algorithm.
 
-Other hyperparameters are also adjustable in run_Test.py. You can select different tasks by switching different folders. For example, test Hopper can switch to:
+Other hyperparameters are also adjustable in `run_Test.py`. You can select different tasks by switching different folders. For example, test Hopper can switch to:
 
 ```train
 cd MuJoCo/Hopper/code/
@@ -79,7 +79,7 @@ Where the parameter is_train needs to be set to:
 is_train = True
 ```
 
-The hyperparameters can be changed via change the run_Test.py. You can select different algorithms by switching different folders. For example, test Vanllia PPO can switch to:
+The hyperparameters can be changed via change the `run_Test.py`. You can select different algorithms by switching different folders. For example, test Vanllia PPO can switch to:
 
 ```train
 cd GymFc/Vanllia_PPO/
@@ -149,20 +149,20 @@ Table 1. Success rates and standard deviations of different algorithms with 100 
 | Oracle             |    **78.0±0.2**   |      33.3±1.49         |      84.3±1.27 |      22.0±0.45   |
 | DICARL(ours)       |    77.1±0.7       |    **44.1±1.87**       |    **87.3±0.9**|    **38.4±1.28** |
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/cartpole/training-return-1.jpg" width=400 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure2.jpg"></div>
 <div align=center>Figure 2. Average failure rates across seven seeds on each test set. The x- and y-axes represent the mass changes of different parts of the robot, respectively.</div>
 
 ### Inﬂuence of robustness constraint on system stability
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/cartpole/training-return-1.jpg" width=400 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure3.jpg"></div>
 <div align=center>Figure 3. Success rates and thrice the standard deviations of DICARL and RARL in different adversary magnitudes are compared. The trained policies are initialized by seven random seeds, and 700 episodes are tested for each mass group.</div>
 
 ### Sim-to-real task
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/cartpole/training-return-1.jpg" width=400 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure4.jpg"></div>
 <div align=center>Figure 4. Step responses and control signals of the three algorithms in the GymFc training environment. OS is short for overshoot, whereas blue line represents the actual aircraft angular velocity, and dashed black line represents the desired angular velocity.</div>
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/cartpole/training-return-1.jpg" width=400 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure5.jpg"></div>
 <div align=center>Figure 5. Trajectories of the quadcopter ﬂying over the racing gate carrying payloads of different masses. Where the blue trajectory does not carry a payload, the yellow trajectory carries a payload of 63.3 g, and the red trajectory carries a payload of 98.68 g.</div>
 
 Table 2. The normalized average error of pitch, roll, and yaw axes of DICARL and PID attitude controllers in the real world. Signiﬁcantly better results from a t-test with p < 1% are highlighted in bold.
@@ -173,13 +173,13 @@ Table 2. The normalized average error of pitch, roll, and yaw axes of DICARL and
 | DICARL               |    **0.2206**      |      **0.1158**         |      0.0721 |  
 
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/cartpole/training-return-1.jpg" width=400 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/figure6.jpg"></div>
 <div align=center>Figure 6. Flight data of DICARL and PID controller. Black curve shows the remote-control input, whereas the red curve shows the angular velocity measured by the IMU. The ﬂight controller sampling frequency is 0.01s, whereas the sampling duration is 50s.</div>
 
 
 ### Video
 
-<div align=center><img src = "https://github.com/RobustStabilityGuaranteeRL/RobustStabilityGuaranteeRL/blob/master/figures/video-gif.gif" width=600 alt="figure"></div>
+<div align=center><img src = "https://github.com/hnsyz-rl/DICARL-master/blob/master/Figure/video1.gif" width=600 alt="figure"></div>
 <div align=center>Visulization of the quadcopter running the DICARL controller ﬂying over the racing gate and carrying payloads of different masses.</div>
 
 
